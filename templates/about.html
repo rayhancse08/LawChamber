@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include 'header.html' %}
+</head>
+<body>
+<br>
+<br>
+<div class="aboutUs">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                {% for item in aboutUs %}
+                <h2>{{ item.titles }}</h2>
+                <p>{{ item.body }}</p>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
